@@ -6,6 +6,7 @@ const ejs = require('ejs');
 
 const bodyParser = require('body-parser');
 const routes = require('./router');
+const port = process.env.PORT || 3000;
 
 app.set('view engine','ejs');
 
@@ -14,6 +15,6 @@ app.use(cors())
 app.use('/',routes);
 
 
-app.listen(5000,()=>{
-    console.log("Up and listening to port 5000");
+app.listen(port,()=>{
+    console.log("Up and listening to port ${port}");
 })
