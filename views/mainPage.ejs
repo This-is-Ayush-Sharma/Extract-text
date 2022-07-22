@@ -1,0 +1,16 @@
+<%- include('./partials/header') %>
+<%- include('./partials/head') %>
+
+
+    <div class="border border-light p-3 mb-4">
+
+        <div class="d-flex align-items-center justify-content-center" style="height: 20rem;">
+            <form action="/uploadImg" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" class="customfile border border-primary border-3 w-90">
+                <input type="submit" class="btn btn-primary" value="Extract Text">
+            </form>
+        </div>
+
+    </div>
+<%- include('./partials/foot') %>
+<%- include('./partials/footer') %>
